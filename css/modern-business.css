@@ -8,13 +8,16 @@
 #BF0411 Rojo
 #A3BD31 Verde Claro
 #2F6535 Verde Oscuro
-#FFFFFF Blanco*/
+#FFFFFF Blanco
+
+Agregar  las correciones de metadata y cambio de imagenes.
+
+*/
 /* Global Styles */
 
 html,
 body {
     height: 100%;
-    background-image: url(../img/green-cup.png);
     background-color: #2F6535;
 }
 
@@ -83,9 +86,42 @@ footer {
     height: 60px;
     background-color: #f5f5f5;
 }
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
 
-.container .credit {
-    margin: 20px 0;
+.text-foot{
+    margin-top: 20px;
+    color: #777;
+    float: left;
+}
+
+#img-foot{
+    height: 50px;
+    width: 160px;
+    margin-top: 5px !important;
+    margin: 0 20px;;
+    float: left;
+}
+
+@media (max-width: 678px) {
+    .text-foot{
+        display: none;
+    }
+
+    #img-foot{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        float: none;
+    }
+}
+
+.caption h3{
+    cursor: pointer;
 }
 
 /* Color Theme*/
@@ -127,6 +163,22 @@ footer {
 .nav-tabs > li.active > a:hover{
     background: #A3BD31;
     color: #2F6535;
+}
+
+.customer-img{
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 100px;
+    min-height: 70px;
+    padding-bottom: 10px
+}
+
+.img-client{
+    text-align: center;
+}
+
+.img-client div{
+    height: 100px;
 }
 
 /* Responsive Styles */
